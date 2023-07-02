@@ -1,0 +1,55 @@
+
+/* reset a mano para cumplir el enunciado (ya esta hecho en 1-normalize.css) */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;}
+  
+/* CSS media queries & responsive web design tutorial for beginners dave gray*/
+
+ /* styles comunes a todos los media queries */
+ body {
+  min-height:100vh;
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke,#475569);
+  display:flex;
+  flex-direction: column;}
+
+  header, nav, main, footer {
+    display:grid;
+    place-content:center;  
+    grid-template-columns:100%; /*centrado en altura} */
+    text-align:center; /*centrado horizontalmente */}
+    
+  header {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#1E293B;
+    color: whitesmoke;
+  }
+
+  footer {
+    position:fixed;
+    background-color:#1E293B;
+    color: whitesmoke;
+    bottom:0;
+    width:100%;
+
+  }
+
+  header {
+    top:0;  }
+
+  main {
+    flex-grow:1;  }
+
+  footer {
+    bottom:0;
+  }
+
+  nav {
+    background-color: whitesmoke ;
+    color: black;
+    padding:1rem;
+    border-bottom:2px solid black      }
